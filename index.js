@@ -16,7 +16,7 @@ The function should:
 */
 
 function createMenuItem(name, price, category){
-    const menuItem = { name, price, category};
+    const menuItem = {name, price, category};
     return menuItem;
 }
 
@@ -90,12 +90,10 @@ Using the reviews array above do the following: (no function needed)
   2. log the whole array to the console, make sure the new review is inside of it   
 */
 
-function newReview(name, rating, feedback) {
-  reviews.push({name,rating,feedback});
-  return reviews;
-}
 
-console.log(newReview("Bob",12,"Hated everything."));
+  reviews.push({name: "Bob", rating: 12, feedback: "Hated everything."});
+
+console.log(reviews);
 
 
 
@@ -124,7 +122,7 @@ Use the getReviewByIndex function below to do the following:
 
 
 function getReviewByIndex(array, num1) {
-  return `${reviews[num1].name} gave the restaurant a ${reviews[num1].rating} star review, and their feedback was: ${reviews[num1].feedback}`;
+  return `${array[num1].name} gave the restaurant a ${array[num1].rating} star review, and their feedback was: ${array[num1].feedback}`;
 }
 
 
